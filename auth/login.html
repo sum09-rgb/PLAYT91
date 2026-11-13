@@ -1,1 +1,171 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b13">
+  <meta name="description" content="Login to PLAYT91 and join Free Fire tournaments.">
+
+  <title>Login | PLAYT91</title>
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body class="auth-page">
+
+  <div class="auth-background" aria-hidden="true">
+    <div class="auth-glow auth-glow-one"></div>
+    <div class="auth-glow auth-glow-two"></div>
+  </div>
+
+  <header class="auth-header">
+    <a href="../index.html" class="auth-brand" aria-label="PLAYT91 home">
+      <span class="auth-brand-icon">P</span>
+      <span>PLAYT<span class="brand-highlight">91</span></span>
+    </a>
+
+    <a href="register.html" class="auth-header-link">
+      Create account
+    </a>
+  </header>
+
+  <main class="auth-main">
+    <div class="auth-container">
+
+      <section class="auth-card">
+
+        <div class="auth-heading">
+          <div class="auth-heading-icon" aria-hidden="true">
+            <span>⚡</span>
+          </div>
+
+          <p class="auth-eyebrow">WELCOME BACK</p>
+
+          <h1 class="auth-title">Ready to play?</h1>
+
+          <p class="auth-subtitle">
+            Login to your PLAYT91 account and get back into the action.
+          </p>
+        </div>
+
+        <div
+          id="loginMessage"
+          class="auth-message"
+          role="alert"
+          aria-live="polite"
+          hidden
+        ></div>
+
+        <form id="loginForm" class="auth-form" novalidate>
+
+          <div class="auth-field">
+            <label for="loginIdentifier">Email, mobile or username</label>
+
+            <input
+              type="text"
+              id="loginIdentifier"
+              name="identifier"
+              class="auth-input"
+              placeholder="Enter your email, mobile or username"
+              autocomplete="username"
+              autocapitalize="none"
+              spellcheck="false"
+              required
+            >
+          </div>
+
+          <div class="auth-field">
+            <div class="auth-label-row">
+              <label for="loginPassword">Password</label>
+
+              <a href="forgot-password.html" class="auth-forgot-link">
+                Forgot password?
+              </a>
+            </div>
+
+            <div class="auth-password-wrapper">
+              <input
+                type="password"
+                id="loginPassword"
+                name="password"
+                class="auth-input"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required
+              >
+
+              <button
+                type="button"
+                class="auth-password-toggle"
+                data-password-toggle="loginPassword"
+                aria-label="Show password"
+                aria-pressed="false"
+              >
+                Show
+              </button>
+            </div>
+          </div>
+
+          <div class="auth-form-helper">
+            <label class="auth-checkbox-label">
+              <input
+                type="checkbox"
+                id="rememberMe"
+                name="rememberMe"
+              >
+              <span>Remember me</span>
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            id="loginButton"
+            class="auth-submit-button"
+          >
+            <span class="auth-button-text">Login to PLAYT91</span>
+            <span
+              class="auth-spinner"
+              aria-hidden="true"
+              hidden
+            ></span>
+          </button>
+
+        </form>
+
+        <div class="auth-divider">
+          <span>NEW TO PLAYT91?</span>
+        </div>
+
+        <div class="auth-bottom-links">
+          <p>
+            Don't have an account?
+            <a href="register.html">Create account</a>
+          </p>
+        </div>
+
+      </section>
+
+      <div class="auth-footer">
+        <p>
+          By continuing, you agree to PLAYT91's
+          <a href="#" aria-label="Terms and conditions">Terms</a>
+          and
+          <a href="#" aria-label="Privacy policy">Privacy Policy</a>.
+        </p>
+
+        <p class="auth-copyright">
+          © 2026 PLAYT91. All rights reserved.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="module" src="../js/auth/login.js"></script>
+
+</body>
+</html>
+
