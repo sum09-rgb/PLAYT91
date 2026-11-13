@@ -1,1 +1,291 @@
 
+/* ==========================================
+   PLAYT91 - RESPONSIVE DESIGN
+   Version: 1.0
+========================================== */
+
+/* TABLETS AND SMALL LAPTOPS */
+
+@media (max-width: 900px) {
+
+  :root {
+    --auth-width: 440px;
+    --header-height: 66px;
+  }
+
+  .auth-main {
+    padding: 35px 20px;
+  }
+
+  .auth-card {
+    padding: 30px;
+  }
+
+}
+
+/* TABLETS AND LARGE PHONES */
+
+@media (max-width: 650px) {
+
+  :root {
+    --font-size-4xl: 2rem;
+    --font-size-3xl: 1.65rem;
+  }
+
+  .auth-header {
+    min-height: 62px;
+    padding: 12px 20px;
+  }
+
+  .auth-brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .auth-brand-name {
+    font-size: 19px;
+  }
+
+  .auth-header-link {
+    font-size: 12px;
+  }
+
+  .auth-main {
+    padding: 30px 16px;
+  }
+
+  .auth-container {
+    max-width: 460px;
+  }
+
+  .auth-card {
+    padding: 26px 22px;
+    border-radius: 20px;
+  }
+
+  .auth-title {
+    font-size: 25px;
+  }
+
+  .auth-heading {
+    margin-bottom: 25px;
+  }
+
+  .auth-form {
+    gap: 17px;
+  }
+
+  .auth-input {
+    min-height: 51px;
+  }
+
+  .auth-submit {
+    min-height: 52px;
+  }
+
+  .auth-bottom-footer {
+    padding: 17px;
+  }
+
+}
+
+/* SMALL MOBILE PHONES */
+
+@media (max-width: 400px) {
+
+  .auth-header {
+    padding: 11px 14px;
+  }
+
+  .auth-brand {
+    gap: 7px;
+  }
+
+  .auth-brand-name {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  .auth-header-link {
+    font-size: 11px;
+  }
+
+  .auth-main {
+    padding: 22px 12px;
+  }
+
+  .auth-card {
+    padding: 23px 17px;
+    border-radius: 17px;
+  }
+
+  .auth-title {
+    font-size: 23px;
+  }
+
+  .auth-subtitle {
+    font-size: 12px;
+  }
+
+  .auth-heading-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 23px;
+  }
+
+  .auth-form {
+    gap: 15px;
+  }
+
+  .auth-input {
+    min-height: 49px;
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .auth-submit {
+    min-height: 49px;
+    font-size: 13px;
+  }
+
+  .auth-footer-text {
+    font-size: 12px;
+  }
+
+  .auth-form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .auth-form-grid .full-width {
+    grid-column: auto;
+  }
+
+  .auth-referral {
+    padding: 13px;
+  }
+
+  .auth-referral-row {
+    flex-direction: column;
+  }
+
+  .auth-referral-row .btn {
+    width: 100%;
+  }
+
+}
+
+/* EXTRA SMALL SCREENS */
+
+@media (max-width: 320px) {
+
+  .auth-card {
+    padding: 19px 13px;
+  }
+
+  .auth-brand-name {
+    font-size: 15px;
+  }
+
+  .auth-header-link {
+    font-size: 10px;
+  }
+
+  .auth-title {
+    font-size: 21px;
+  }
+
+  .auth-input {
+    padding: 10px;
+  }
+
+  .auth-password-toggle {
+    right: 8px;
+  }
+
+}
+
+/* LANDSCAPE MOBILE */
+
+@media (
+  max-height: 550px
+) and (
+  orientation: landscape
+) {
+
+  .auth-main {
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .auth-heading {
+    margin-bottom: 18px;
+  }
+
+  .auth-heading-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 10px;
+  }
+
+  .auth-title {
+    font-size: 22px;
+  }
+
+  .auth-card {
+    padding: 23px;
+  }
+
+}
+
+/* TOUCH DEVICES */
+
+@media (hover: none) {
+
+  .card-interactive:hover {
+    transform: none;
+  }
+
+  .auth-submit:hover {
+    transform: none;
+  }
+
+}
+
+/* HIGH CONTRAST */
+
+@media (prefers-contrast: more) {
+
+  .auth-input {
+    border-color: var(--gray-400);
+  }
+
+  .auth-card {
+    border-color: var(--gray-400);
+  }
+
+  .auth-subtitle,
+  .auth-footer-text,
+  .auth-label {
+    color: var(--white);
+  }
+
+}
+
+/* PRINT */
+
+@media print {
+
+  .auth-background,
+  .auth-header,
+  .auth-bottom-footer {
+    display: none;
+  }
+
+}
+
+/* ==========================================
+   END OF RESPONSIVE DESIGN
+========================================== */
+
